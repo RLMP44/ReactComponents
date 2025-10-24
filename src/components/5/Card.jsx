@@ -3,13 +3,16 @@ import React from "react";
 function Card(props) {
   return (
     <div>
-      <h1>{props.name}</h1>
-      <img
-        src="https://www.youngminds.org.uk/media/3bljel4m/young-person-smiling-with-their-friends.png?quality=55"
-        alt="avatar-image"
-      ></img>
-      <p>+ 1 656 908 3829</p>
-      <p>123@gmail.com</p>
+      <div className="card">
+        <div className="top">
+          <h2 className="name">{props.name}</h2>
+          <img className="circle-img" src={props.imgURL} alt="avatar_img" />
+        </div>
+        <div className="bottom">
+          <p className="info">{props.tel}</p>
+          <p className="info">{props.email}</p>
+        </div>
+      </div>
     </div>
   );
 }
