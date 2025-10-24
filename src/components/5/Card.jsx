@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
-import Details from "./Details";
+import Detail from "./Detail";
 
 function Card(props) {
   return (
@@ -11,8 +11,8 @@ function Card(props) {
           <Avatar imgURL={props.imgURL} />
         </div>
         <div className="bottom">
-          <Details info={props.tel} />
-          <Details info={props.email} />
+          <Detail info={props.tel} />
+          <Detail info={props.email} />
         </div>
       </div>
     </div>

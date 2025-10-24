@@ -1,7 +1,7 @@
 import React from "react";
 
-function Details(props) {
+function Detail(props) {
   return <p className="info">{props.info}</p>;
 }
 
-export default Details;
+export default Detail;
